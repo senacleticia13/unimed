@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url(imguc14/imgatendimento.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+    color: blue;
+}
+select, button {
+    color: #007bff;
+    padding: 10px;
+    margin: 5px;
+}
+#mostrar {
+    background-color: white;       
+    color: #007bff;
+    margin-top: 20px;
+    font-size: 1.2em;
+    border: 1px solid black; 
+    padding: 10px; 
+    border-radius: 5px; 
+    
+}
+header {
+    background-color: blue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul button {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul button:hover {
+    background-color: #003d80;
+}
+
+main {
+    padding: 20px;
+}
+
+.container-fluid {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: right;
+    color: blue;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"].btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+input[type="submit"].btn-primary:hover {
+    background-color: #0056b3;
+}
+
+input[type="button"].btn-danger {
+    background-color: lightblue;
+    color: white;
+}
+
+input[type="button"].btn-danger:hover {
+    background-color: blue;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h3, h4 {
+    margin-top: 20px;
+}
+
+h4 {
+    color: #dc3545;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul button {
+        width: 90%;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type="submit"], input[type="button"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    label, input[type="text"], input[type="email"], input[type="password"], select {
+        font-size: 14px;
+    }
+
+    input[type="submit"], input[type="button"] {
+        font-size: 12px;
+    }
+}
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
